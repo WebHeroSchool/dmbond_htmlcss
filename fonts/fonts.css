@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'pt_serifregular';
+    font-family: 'pt_serif';
     src: url('ptserif-regular-webfont.woff2') format('woff2'),
          url('ptserif-regular-webfont.woff') format('woff');
     font-weight: normal;
