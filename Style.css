@@ -16,11 +16,21 @@ body{
   margin-bottom: 100px;
 }
 
-.main {
-  padding-right: 0 63% 100px 0;
-  background: top right no-repeat url(img/img_main.svg);
+.wrapper {
+  margin:auto;
+  width: 80%;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.main {
+ padding: 0 20% 200px 0;
+ background: top right no-repeat url(img/img_main.svg);
+}
 
 .main_title {
   margin: 0 0 40px 0;
@@ -56,17 +66,19 @@ body{
   background: #ECF3FF;
 }
 
-
-.wrapper {
-  margin:auto;
-  width: 80%;
-
+.main-content_button {
+  display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.maint-content:hover {
+  opacity: .5;
 }
 
 .logo,.menu {
@@ -76,18 +88,20 @@ body{
 .logo {
   position: relative;
   padding: 40px 0;
-  padding-left: 44px;
-  font: bold 24px/31px pt_serif, arial, helvetice, sans-serif;
-  margin-right: 25%;
-  }
+  font: bold 20px/27px pt_serif, arial, helvetice, sans-serif;
+
+}
 
 .logo_circle {
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
+}
+
+.logo_text {
+  margin-left: 40px;
 }
 
 .logo_circle_color_blue {
@@ -106,13 +120,16 @@ body{
 
 .menu {
   position: relative;
-  padding: 40px 0;
+  display: flex;
+  aligh-items: center;
+  padding: 40px 150px;
+
 }
 
 .menu_item {
    position: relative;
-   margin-right: 26px;
-   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+   margin-right: 20px;
+   font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
    color: #000;
    text-decoration: none;
    transition: opacity .5s;
@@ -123,7 +140,7 @@ body{
   left: 0;
   display: block;
   content:"";
-  width: 0;
+  width: 100%;
   height: 3px;
   background: #0056EC;
   opacity: 0;
@@ -145,7 +162,6 @@ body{
   width:100%;
   height:3px;
   background: #0056EC;
-
 }
 
 .menu_item:hover{
@@ -164,19 +180,4 @@ body{
 
 .menu_item:last-child {
   margin-right:0;
-}
-
-.main-content_button {
-  display: inline-block;
-  font: 14px/16px Roboto, arial, helvetica, sans-serif;
-  color: #fff;
-  background: #0056EC;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: opacity .5s;
-}
-
-.maint-content:hover {
-  opacity: .5;
 }
